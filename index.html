@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X-O Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1>XO Game</h1>
+        <div id="status" class="status">Turn: X</div>
+
+        <!-- لوحة النقاط -->
+        <div id="scoreboard" class="scoreboard" aria-live="polite">
+          <div class="score player-x">
+            <div class="label">X</div>
+            <div id="scoreX" class="value">0</div>
+          </div>
+          <div class="score ties">
+            <div class="label">Tie</div>
+            <div id="scoreTies" class="value">0</div>
+          </div>
+          <div class="score player-o">
+            <div class="label">O</div>
+            <div id="scoreO" class="value">0</div>
+          </div>
+          <button id="resetScores" class="btn small" title="Reset scores">Reset</button>
+        </div>
+      </header>
+
+      <section id="boardWrap" class="board-wrap">
+        <div id="gameBoard" class="board">
+          <div class="row">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+          </div>
+          <div class="row">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+          </div>
+          <div class="row">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="controls">
+        <button id="restartButton" class="btn">Restart Game</button>
+      </footer>
+
+      <!-- developer credit -->
+      <div class="credit" aria-hidden="false">
+        <span class="author">Khalid Fathulla</span> — Developed by
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
